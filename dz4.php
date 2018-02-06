@@ -1,5 +1,5 @@
 <?php 
-$content = file_get_contents('http://samples.openweathermap.org/data/2.5/weather?q=Moscow,ru&appid=b6907d289e10d714a6e88b30761fae22') ;
+$content = file_get_contents('http://api.openweathermap.org/data/2.5/weather?q=Moscow,Ru&appid=6c532ad7bfe38eeb69dc23edfa8ad4a7') ;
 //echo $content;
 $decoded = json_decode($content, true);
 /*echo '<pre>';
