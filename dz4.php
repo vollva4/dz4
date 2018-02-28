@@ -1,7 +1,7 @@
 <?php 
 $id = "appid=6c532ad7bfe38eeb69dc23edfa8ad4a7";
 $city = 'Moscow,Ru';
-$content = file_get_contents('http://api.openweathermap.org/data/2.5/weather?q=$city&$id') ;
+$content = file_get_contents('http://api.openweathermap.org/data/2.5/weather?q=' . $city . '&' . $id) ;
 //echo $content;
 $decoded = json_decode($content, true);
 $temperature = 'Текущая температура:'.  ($decoded['main'] ['temp'] - 273) . ' Градусов Цельсия.';
